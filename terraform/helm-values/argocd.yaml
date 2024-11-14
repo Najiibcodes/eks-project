@@ -1,0 +1,19 @@
+# Enable to disable SSL redirection. As our ingress controller handles the redirect, this is required
+extraArgs:
+  - --insecure
+
+service:
+  type: ClusterIP
+
+ingress:
+  enabled: true
+  ingressClassName: "nginx"
+  annotations:
+    nginx.org/hsts: "false"
+    cert-manager.io/cluster-issuer: letsencrypt-prod
+  hosts:
+    - argocd.lab.najiib.co.uk
+  tls:
+    - secretName: argocd-ingress-tls
+      hosts:
+        - argocd.lab.najiib.co.uk

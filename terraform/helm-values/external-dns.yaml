@@ -1,0 +1,13 @@
+provider: aws
+
+env:
+  - name: AWS_DEFAULT_REGION
+    value: eu-west-2
+
+serviceAccount:
+  create: true
+  annotations:
+    eks.amazonaws.com/role-arn: arn:aws:iam::156041431760:role/external-dns
+
+domainFilters:
+  - lab.najiib.co.uk
