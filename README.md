@@ -1,6 +1,6 @@
-# 2048 Deployment by Team Bravo EKS 🚀 ![Build Passing](https://img.shields.io/badge/build-passing-brightgreen)
+# 2048 Deployment on EKS 🚀 ![Build Passing](https://img.shields.io/badge/build-passing-brightgreen)
 
-### This project is a deployment of the classic 2048 game hosted using AWS EKS by Team Bravo.👥🤝
+### This project is a deployment of the classic 2048 game hosted using AWS EKS.👥🤝
 
 This app is a straightforward yet engaging game where players combine numbered tiles to achieve the elusive 2048 tile through careful planning and strategic movements. 🎮🕹️🧩
 
@@ -29,7 +29,7 @@ This project was undertaken to deploy the 2048 game as a cloud-native applicatio
 
 ### DevOps Tools 🔧
 
-#### These are the tools we used to set up the infrastructure, automate deployments, and manage the applications's lifecycle:
+#### These are the tools I used to set up the infrastructure, automate deployments, and manage the applications's lifecycle:
 ##
 
 | Tool                       | Description                                                                  |
@@ -133,17 +133,6 @@ EXPOSE 3000
 CMD ["-m", "http.server", "3000"]
 ```
 - Specifies the command to run when the container starts. In this case, it launches a simple HTTP server on port 3000 using Python's built-in module.
-
-##
-
-## Contributors 👥
-
-| Contributor | Role                    |
-|-------------|-------------------------|
-| Qais  Navaei      | Contributor, DevOps Engineer |
-| Abdel Yusuf      | Contributor, DevOps Engineer |
-| Najib Mahmoud      | Contributor, DevOps Engineer |
-| Aaliyana Adoley Mingle    | Contributor, DevOps Engineer |
 
 
 ## License 📝
